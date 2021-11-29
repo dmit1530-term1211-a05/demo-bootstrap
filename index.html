@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootsrap Grid Layout Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <header>
+            <div class="container-lg">
+                <h1>Hello World! 😃 </h1>
+            </div>
+        </header>
+        <!-- two column layout -->
+        <section class="py-3">
+            <div class="container-lg">
+                <!-- class row is the flex parent -->
+                <div class="row align-items-center">
+                    <!-- 
+                        columns add up to 12 
+                        - using col-md will apply once your screen hits 768px and place the texts and image (columns) side-by-side. Anything below 767px will stack vertically.  
+                    -->
+                    <div class="col-md-8 mb-3">
+                        <!-- column one takes up 8 columns and has a margin-bottom of 1rem -->
+                        <h2>Major Attention Area</h2>
+                        <p>Learning the Bootstrap Framework for fast and easy prototyping</p>
+                        <!-- button -->
+                        <button class="btn btn-outline-secondary"> Learn More</button>
+                        <button class="btn btn-primary">Download</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/bootstrap-stack.png" alt="boostrap stack logo"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 column grid layout -->
+        <section class="py-3">
+            <div class="container-lg">
+                <div class="row">
+                    <!-- 
+                        3 cards 
+                        - on small screens they will stack (767px and down)
+                        - on a medium screen 2 cards will sit side-by-side and 1 below (768 - 959px)
+                            - column 1 & 2 will take 50% space each and the 3rd column will take up 100% of the available space. 
+                        - on the largest screen all 3 cards will sit a row.
+                            - column 1, 2 & 3 will take up 33% of the available space. using .col-lg-4
+                        - all columns must add up to 12
+                    -->
+                    <!-- column one-->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card shadow-sm">
+                            <div class="card-header">
+                                <h3>subheading</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quia alias, corrupti tempore vel nostrum iste commodi, vitae possimus distinctio voluptatibus assumenda aperiam sint error! Iste ipsam velit aut similique?</p>
+                                <a class="btn btn-outline-success" href="" >Learn More ></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- column two -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card shadow-sm">
+                            <div class="card-header">
+                                <h3>subheading</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quia alias, corrupti tempore vel nostrum iste commodi, vitae possimus distinctio voluptatibus assumenda aperiam sint error! Iste ipsam velit aut similique?</p>
+                                <a class="btn btn-outline-success" href="" >Learn More ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column three-->
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <div class="card shadow-sm">
+                            <div class="card-header">
+                                <h3>subheading</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quia alias, corrupti tempore vel nostrum iste commodi, vitae possimus distinctio voluptatibus assumenda aperiam sint error! Iste ipsam velit aut similique?</p>
+                                <a class="btn btn-outline-success" href="" >Learn More ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- bootstrap js file(s) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
